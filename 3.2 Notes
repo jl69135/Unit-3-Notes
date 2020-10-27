@@ -1,7 +1,8 @@
 
 public class Main
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		System.out.println("_Structure of an if-statement_");
 		if(boolean condition)
 		    action;
@@ -20,6 +21,11 @@ public class Main
         if(d1 == 1)
             sum = 0;
         if(d2 == 1)
-            sum = 0;
+            sum = 0;  
+        //no brackets for these if statements because order doesn't matter
+        
+        System.out.println("You can, but not required to, have an else statment with it.");
+        System.out.println("We NEVER have both or neither running t");
+        System.out.println("When you have an if-else statement, you are always guaranteed an outcome.");
 	}
 }
