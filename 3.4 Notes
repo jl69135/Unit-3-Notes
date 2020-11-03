@@ -1,16 +1,22 @@
+import java.util.Scanner; 
+
 public class Main
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		//Assume that the variable letterGrade has been declared as a String 
 		//The variable numberGrade has been declared as a double 
 		//The double has the correct value for the student in question
         //Write a code that assigns a value to letterGrade based on what numberGrade is 
         //(according to the standard A-B-C-D-F scale, with no + or -, using the standard 90-80-70-60 thresholds)
         
-        String letterGrade; //variables declared
-        double numberGrade; //????????????????????????????????????????????????????????????????????????????????????????????????????
+        Scanner reader = new Scanner(System.in); 
         
-        if(numberGrade >= 90)  //no brackets because order does not matter!
+        String letterGrade; //variables declared
+        double numberGrade = reader.nextDouble(); 
+        
+        
+        if(numberGrade >= 90)  
             letterGrade = "A";
             
         else if(numberGrade >= 80)
@@ -24,6 +30,12 @@ public class Main
             
         else
             letterGrade = "F";
+            
+        System.out.println(letterGrade);
         //The else at the end only applies if everything above it is false
+        //guaranteed an outcome because there is an ELSE at the end
+        //if there is no ELSE at the end, only ELSE IF, then an outcome is not guaranteed
+        
+        System.out.println("If it ends in an else-if or if (it’s just an if by itself), then that chain is NOT guaranteed to print something.");
 	}
 }
