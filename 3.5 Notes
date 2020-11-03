@@ -1,0 +1,9 @@
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	System.out.println("! Means NOT \n&& Means AND \n|| Means OR");
+    //The operators order of precedence is in THAT ORDER
+	}
+}
